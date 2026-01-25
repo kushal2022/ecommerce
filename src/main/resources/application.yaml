@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  application:
+    name: ecom-system
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/ecom?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+    username: root
+    password: 12345@ME
+    driverClassName: com.mysql.jdbc.Driver
+    hikari:
+      maximumPoolSize: 10
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    generate-ddl: true
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
