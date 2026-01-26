@@ -1,21 +1,23 @@
 server:
   port: 8080
+
+spring:
   application:
     name: ecom-system
   datasource:
+    # Modern MySQL 8.0+ Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/ecom?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
     username: root
-    password: 12345@ME
-    driverClassName: com.mysql.jdbc.Driver
+    password: "12345@ME"
     hikari:
-      maximumPoolSize: 10
+      maximum-pool-size: 10
   jpa:
+    show-sql: true
+    hibernate:
+      # Automatically creates/updates tables based on your @Entity classes
+      ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
-    generate-ddl: true
-    hibernate:
-      naming:
-        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-    show-sql: true
+        # Modern Hibernate 6+ dialect
+        dialect: org.hibernate.dialect.MySQLDialect
