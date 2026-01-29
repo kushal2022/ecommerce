@@ -1,4 +1,4 @@
-package com.ecommerce.project.model;
+package com.ecommerce.project.payload;
 
 import java.util.HashSet;
 import java.util.Set;

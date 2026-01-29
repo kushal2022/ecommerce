@@ -1,7 +1,7 @@
 package com.ecommerce.project.service;
 
-import com.ecommerce.project.model.AuthenticationResult;
-import com.ecommerce.project.model.UserResponse;
+import com.ecommerce.project.payload.AuthenticationResult;
+import com.ecommerce.project.payload.UserResponse;
 import com.ecommerce.project.security.request.LoginRequest;
 import com.ecommerce.project.security.request.SignupRequest;
 import com.ecommerce.project.security.response.MessageResponse;

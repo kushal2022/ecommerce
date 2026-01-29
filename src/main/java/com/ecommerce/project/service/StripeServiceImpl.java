@@ -1,6 +1,6 @@
 package com.ecommerce.project.service;
 
-import com.ecommerce.project.model.StripePaymentDto;
+import com.ecommerce.project.payload.StripePaymentDto;
 import com.stripe.Stripe;
 import com.stripe.exception.StripeException;
 import com.stripe.model.Customer;

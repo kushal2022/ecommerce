@@ -1,7 +1,7 @@
 package com.ecommerce.project.controller;
 
 import com.ecommerce.project.database.dto.User;
-import com.ecommerce.project.model.AddressDTO;
+import com.ecommerce.project.payload.AddressDTO;
 import com.ecommerce.project.service.AddressService;
 import com.ecommerce.project.utility.AuthUtil;
 import jakarta.validation.Valid;

@@ -1,8 +1,8 @@
 package com.ecommerce.project.controller;
 
 import com.ecommerce.project.database.dto.Cart;
-import com.ecommerce.project.model.CartDTO;
-import com.ecommerce.project.model.CartItemDTO;
+import com.ecommerce.project.payload.CartDTO;
+import com.ecommerce.project.payload.CartItemDTO;
 import com.ecommerce.project.database.dao.CartRepository;
 import com.ecommerce.project.service.CartService;
 import com.ecommerce.project.utility.AuthUtil;

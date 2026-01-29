@@ -1,4 +1,4 @@
-package com.ecommerce.project.model;
+package com.ecommerce.project.payload;
 
 import com.ecommerce.project.database.dto.Address;
 import lombok.Data;

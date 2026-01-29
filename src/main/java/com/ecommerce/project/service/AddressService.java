@@ -1,7 +1,7 @@
 package com.ecommerce.project.service;
 
 import com.ecommerce.project.database.dto.User;
-import com.ecommerce.project.model.AddressDTO;
+import com.ecommerce.project.payload.AddressDTO;
 
 import java.util.List;
 

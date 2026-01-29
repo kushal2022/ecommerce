@@ -3,7 +3,7 @@ package com.ecommerce.project.service;
 import com.ecommerce.project.exception.ResourceNotFoundException;
 import com.ecommerce.project.database.dto.Address;
 import com.ecommerce.project.database.dto.User;
-import com.ecommerce.project.model.AddressDTO;
+import com.ecommerce.project.payload.AddressDTO;
 import com.ecommerce.project.database.dao.AddressRepository;
 import com.ecommerce.project.database.dao. UserRepository;
 import org.modelmapper.ModelMapper;
