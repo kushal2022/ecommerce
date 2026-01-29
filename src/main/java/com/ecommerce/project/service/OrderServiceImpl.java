@@ -3,10 +3,9 @@ package com.ecommerce.project.service;
 import com.ecommerce.project.database.dto.*;
 import com.ecommerce.project.exception.APIException;
 import com.ecommerce.project.exception.ResourceNotFoundException;
-import com.ecommerce.project.model.*;
-import com.ecommerce.project.model.OrderDTO;
-import com.ecommerce.project.model.OrderItemDTO;
-import com.ecommerce.project.model.OrderResponse;
+import com.ecommerce.project.payload.OrderDTO;
+import com.ecommerce.project.payload.OrderItemDTO;
+import com.ecommerce.project.payload.OrderResponse;
 import com.ecommerce.project.database.dao.*;
 import com.ecommerce.project.utility.AuthUtil;
 import jakarta.transaction.Transactional;
@@ -21,7 +20,6 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 public class OrderServiceImpl implements OrderService {

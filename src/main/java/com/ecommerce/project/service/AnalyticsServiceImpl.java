@@ -1,6 +1,6 @@
 package com.ecommerce.project.service;
 
-import com.ecommerce.project.model.AnalyticsResponse;
+import com.ecommerce.project.payload.AnalyticsResponse;
 import com.ecommerce.project.database.dao.OrderRepository;
 import com.ecommerce.project.database.dao.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;

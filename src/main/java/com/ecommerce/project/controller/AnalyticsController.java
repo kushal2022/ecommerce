@@ -1,6 +1,6 @@
 package com.ecommerce.project.controller;
 
-import com.ecommerce.project.model.AnalyticsResponse;
+import com.ecommerce.project.payload.AnalyticsResponse;
 import com.ecommerce.project.service.AnalyticsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
